@@ -738,6 +738,10 @@ a {
     margin-bottom: 20px;
   }
 
+  .featured h1 {
+    font-size: 23px;
+  }
+
   .movie-list {
     width: 100%;
     display: flex;
