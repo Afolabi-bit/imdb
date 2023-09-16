@@ -704,3 +704,146 @@ a {
 .right .watchMore {
   background-color: #be123d2a;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 450px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .search {
+    display: none;
+  }
+
+  main.hero {
+    position: unset;
+    padding: 50px 10px;
+    width: 100%;
+    height: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main.hero h1 {
+    font-size: 40px;
+    line-height: 56px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .featured {
+    margin-bottom: 20px;
+  }
+
+  .movie-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.sidebar {
+  width: 70px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar .btn-wrapper a > span {
+  display: none;
+}
+
+.sidebar .btn-wrapper a > span.red {
+  display: block;
+}
+
+.sidebar .text {
+  display: none;
+}
+
+.sidebar .logo h2 {
+  display: none;
+}
+
+.sidebar .logout span {
+  display: none;
+}
+
+.pre-main-content {
+  width: calc(100% - 100px);
+  padding: 0 20px;
+  margin-left: 70px;
+}
+
+.play-wrapper {
+  width: 70px;
+  height: 70px;
+}
+
+.play-wrapper img {
+  width: 38px;
+  height: 38px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  width: 100%;
+}
+
+.left .title-block {
+  flex-direction: column;
+  align-items: start;
+}
+
+.details .dot {
+  visibility: hidden;
+}
+
+.details .top-rated {
+  padding: 0;
+  width: 100%;
+  flex-direction: column;
+}
+
+.details .top-rated div {
+  width: 100%;
+  flex-direction: column;
+}
+
+.top-rated p {
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+}
+
+.top-rated p:first-child {
+  border-radius: 10px 10px;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.right {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.right .star {
+  margin-bottom: 10px;
+}
+
+.right .lastImg {
+  width: 100%;
+  object-fit: contain;
+}
